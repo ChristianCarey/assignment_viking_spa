@@ -1,5 +1,5 @@
 store.factory('cartService', ["productService", function(productService) {
-  _cart = {}
+  var _cart = {}
 
   var addItem = function(product, quantity){
     _cart[product.id] = angular.copy(product, {});
